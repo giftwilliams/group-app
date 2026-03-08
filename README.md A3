@@ -1,0 +1,123 @@
+DSA-CH23 – Simplified Social Network (A5: Friend Search / Autocomplete)
+
+Project Overview
+
+This project implements a simplified social network feature that allows users to search for friends quickly using an autocomplete system. The system suggests friend names as the user types a prefix.
+
+The implementation uses the Trie (Prefix Tree) data structure to provide efficient and scalable prefix-based searching.
+
+This project demonstrates the use of key Data Structures and Algorithms concepts such as searching, prefix indexing, and complexity analysis.
+
+---
+
+Features
+
+- Add friend names
+- Fast prefix-based friend search
+- Autocomplete suggestions
+- Case-insensitive searching
+- Efficient scalable search using Trie structure
+
+---
+
+Data Structures Used
+
+Data Structure| Purpose
+Trie| Efficient prefix-based friend search
+Array| Storage for Trie children
+Recursion| Traversing Trie for suggestions
+
+---
+
+System Architecture
+
+User Input
+↓
+Search Module
+↓
+Trie Data Structure
+↓
+Autocomplete Suggestions
+
+---
+
+How To Run
+
+1. Compile the program
+
+gcc friend_search.c -o friend_search
+
+2. Run the program
+
+./friend_search
+
+3. Use the menu to:
+
+- Add friends
+- Search using prefixes
+- Get autocomplete suggestions
+
+---
+
+Example Usage
+
+Friends Added:
+
+Alice
+Alvin
+Brian
+Brenda
+Gift
+
+User Search:
+
+Input:
+
+Al
+
+Output:
+
+Alice
+Alvin
+
+---
+
+Complexity Analysis
+
+Operation| Complexity
+Insert Friend| O(L)
+Search Prefix| O(L)
+Autocomplete| O(L + K)
+
+Where
+L = length of the word
+K = number of suggestions returned
+
+---
+
+Scalability
+
+The Trie data structure allows the system to handle thousands or millions of users efficiently because searches only follow prefix paths rather than scanning the entire dataset.
+
+---
+
+Repository Structure
+
+friend_search.c
+README.md
+architecture.png
+test_cases.txt
+
+---
+
+Group Members
+
+(Insert group member names here)
+
+---
+
+Demo Video
+
+YouTube link: (Insert video link)
+
+---
